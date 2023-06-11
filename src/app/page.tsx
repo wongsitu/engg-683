@@ -9,6 +9,12 @@ import artificialIntelligence from './images/artificial-intelligence.png';
 import sensors from './images/sensors.png';
 import augmentedReality from './images/augmented-reality.png';
 
+import farhad from './images/members/farhad.jpg'
+import mahsa from './images/members/mahsa.jpg'
+import mohammed from './images/members/mohammed.jpg'
+import pedram from './images/members/pedram.jpg'
+import waika from './images/members/waika.jpg'
+
 import './globals.css';
 import Image from 'next/image';
 
@@ -121,9 +127,15 @@ function App() {
           <h2 className="text-4xl font-bold mb-10 text-gray-700">About Us</h2>
           <div className="flex flex-wrap -mx-4">
             <div className="md:w-1/2 px-4">
-              {/* <img src={teamImage} alt="Team" className="w-full rounded-lg mb-8" /> */}
+              <div className='flex flex-wrap justify-around'>
+                <Image src={farhad} alt="farhad" className="w-1/3 rounded-lg mb-4" />
+                <Image src={mahsa} alt="mahsa" className="w-1/3 rounded-lg mb-4" />
+                <Image src={mohammed} alt="mohammed" className="w-1/3 rounded-lg mb-4" />
+                <Image src={pedram} alt="pedram" className="w-1/3 rounded-lg mb-4" />
+                <Image src={waika} alt="waika" className="w-1/3 rounded-lg mb-4" />
+              </div>
             </div>
-            <div className="md:w-1/2 px-4">
+            <div className="md:w-1/2 px-4 flex flex-col justify-center">
               <p className="text-xl mb-8 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum eleifend mauris, vitae commodo nunc bibendum eget. Fusce tristique, magna nec mollis malesuada, mi nunc pellentesque nisl, sed congue turpis nisi non enim. In vel magna sem. Pellentesque viverra interdum turpis, at ultrices odio vehicula ut. Curabitur nec suscipit nisl, ac hendrerit lorem.</p>
               <p className="text-xl text-gray-700">Phasellus vitae purus ac libero faucibus efficitur vitae et erat. Mauris vitae felis cursus, cursus turpis non, cursus leo. Fusce sed sollicitudin est. Nunc eget tristique ligula, eget hendrerit magna. Aliquam ullamcorper purus id quam vulputate, non aliquam purus lobortis.</p>
             </div>
