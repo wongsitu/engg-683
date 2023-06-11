@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.png';
+import logo from './mpmfw.png';
 import './globals.css';
+import Image from 'next/image';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between flex-wrap py-6">
             <div className="flex items-center flex-shrink-0 text-black mr-6">
-              {/* <img src={logo} alt="Company Logo" className="h-12 w-auto" /> */}
+              <Image src={logo} alt="Company Logo" className="h-12 w-auto" />
               <span className="font-semibold text-xl tracking-tight ml-2">Oil & Gas Company</span>
             </div>
             <div className="block lg:hidden">
