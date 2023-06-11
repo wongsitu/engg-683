@@ -1,5 +1,14 @@
 import React from 'react';
-import logo from './mpmfw.png';
+import logo from './images/mpmfw.png';
+import hero from './images/hero.png';
+
+import digitalTwins from './images/digital-twins.png';
+import cloudSolutions from './images/cloud-solutions.png';
+import realTimeData from './images/real-time-data.png';
+import artificialIntelligence from './images/artificial-intelligence.png';
+import sensors from './images/sensors.png';
+import augmentedReality from './images/augmented-reality.png';
+
 import './globals.css';
 import Image from 'next/image';
 
@@ -47,12 +56,12 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="md:flex md:items-center">
             <div className="md:w-1/2">
-              <h1 className="font-bold text-4xl md:text-6xl mb-4">Welcome to Oil & Gas Company</h1>
+              <h1 className="font-bold text-4xl md:text-6xl mb-4 text-gray-700">Welcome to Oil & Gas Company</h1>
               <p className="text-gray-700 text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia faucibus posuere. Sed elementum nisi neque, et efficitur justo sagittis vitae.</p>
               <a href="#services" className="inline-block bg-black text-white py-3 px-6 rounded-lg text-xl font-semibold hover:bg-gray-800">Learn More</a>
             </div>
             <div className="md:w-1/2 mt-10 md:mt-0">
-              {/* <img src={oilRigImage} alt="Oil Rig" className="w-full rounded-lg" /> */}
+              <Image src={hero} alt="Oil Rig" className="w-full rounded-lg" />
             </div>
           </div>
         </div>
@@ -61,48 +70,62 @@ function App() {
       <section id="services" className="bg-sky-900 py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-10">Our Services</h2>
-          <div className="flex flex-wrap -mx-4">
-            <div className="md:w-1/3 px-4 mb-8">
+          <div className="columns-1 md:columns-2 lg:columns-3">
+            <div className="px-4 mb-8 break-inside-avoid-column">
               <div className="bg-white p-6 rounded-lg shadow">
-                <svg className="w-12 h-12 mb-4 text-black" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M14 11h6v2h-6zM4 11h12v2H4zM14 5h6v2h-6zM4 5h6v2H4z" />
-                </svg>
-                <h3 className="text-2xl font-bold mb-2">Exploration</h3>
+                <Image src={digitalTwins} alt="Digital twins" className="w-full rounded-lg mb-4" />
+                <h3 className="text-2xl font-bold mb-2 text-gray-700">Digital twins</h3>
                 <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
-            <div className="md:w-1/3 px-4 mb-8">
+            <div className="px-4 mb-8 break-inside-avoid-column">
               <div className="bg-white p-6 rounded-lg shadow">
-                <svg className="w-12 h-12 mb-4 text-black" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M4 12h16v2H4zM4 18h16v2H4zM4 6h16v2H4z" />
-                </svg>
-                <h3 className="text-2xl font-bold mb-2">Production</h3>
+                <Image src={cloudSolutions} alt="Cloud Solutions" className="w-full rounded-lg mb-4" />
+                <h3 className="text-2xl font-bold mb-2 text-gray-700">Cloud integrated solutions</h3>
                 <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
-            <div className="md:w-1/3 px-4 mb-8">
+            <div className="px-4 mb-8 break-inside-avoid-column">
               <div className="bg-white p-6 rounded-lg shadow">
-                <svg className="w-12 h-12 mb-4 text-black" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M22 6h-4V4h-2v2h-4V4H8v2H4v12h16V6zm-2 10H4V8h16v8z" />
-                </svg>
-                <h3 className="text-2xl font-bold mb-2">Refining</h3>
+                <Image src={artificialIntelligence} alt="AI-driven assistance" className="w-full rounded-lg mb-4" />
+                <h3 className="text-2xl font-bold mb-2 text-gray-700">AI-driven assistance</h3>
+                <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div className="px-4 mb-8 break-inside-avoid-column">
+              <div className="bg-white p-6 rounded-lg shadow">
+                <Image src={realTimeData} alt="Real Time data" className="w-full rounded-lg mb-4" />
+                <h3 className="text-2xl font-bold mb-2 text-gray-700">Real-time data</h3>
+                <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div className="px-4 mb-8 break-inside-avoid-column">
+              <div className="bg-white p-6 rounded-lg shadow">
+                <Image src={sensors} alt="E2E sensor installation" className="w-full rounded-lg mb-4" />
+                <h3 className="text-2xl font-bold mb-2 text-gray-700">E2E sensor monitoring</h3>
+                <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div className="px-4 mb-8 break-inside-avoid-column">
+              <div className="bg-white p-6 rounded-lg shadow">
+                <Image src={augmentedReality} alt="E2E sensor installation" className="w-full rounded-lg mb-4" />
+                <h3 className="text-2xl font-bold mb-2 text-gray-700">Augmented reality</h3>
                 <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <section id="about" className="bg-white py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-10">About Us</h2>
+          <h2 className="text-4xl font-bold mb-10 text-gray-700">About Us</h2>
           <div className="flex flex-wrap -mx-4">
             <div className="md:w-1/2 px-4">
               {/* <img src={teamImage} alt="Team" className="w-full rounded-lg mb-8" /> */}
             </div>
             <div className="md:w-1/2 px-4">
-              <p className="text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum eleifend mauris, vitae commodo nunc bibendum eget. Fusce tristique, magna nec mollis malesuada, mi nunc pellentesque nisl, sed congue turpis nisi non enim. In vel magna sem. Pellentesque viverra interdum turpis, at ultrices odio vehicula ut. Curabitur nec suscipit nisl, ac hendrerit lorem.</p>
-              <p className="text-xl">Phasellus vitae purus ac libero faucibus efficitur vitae et erat. Mauris vitae felis cursus, cursus turpis non, cursus leo. Fusce sed sollicitudin est. Nunc eget tristique ligula, eget hendrerit magna. Aliquam ullamcorper purus id quam vulputate, non aliquam purus lobortis.</p>
+              <p className="text-xl mb-8 text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum eleifend mauris, vitae commodo nunc bibendum eget. Fusce tristique, magna nec mollis malesuada, mi nunc pellentesque nisl, sed congue turpis nisi non enim. In vel magna sem. Pellentesque viverra interdum turpis, at ultrices odio vehicula ut. Curabitur nec suscipit nisl, ac hendrerit lorem.</p>
+              <p className="text-xl text-gray-700">Phasellus vitae purus ac libero faucibus efficitur vitae et erat. Mauris vitae felis cursus, cursus turpis non, cursus leo. Fusce sed sollicitudin est. Nunc eget tristique ligula, eget hendrerit magna. Aliquam ullamcorper purus id quam vulputate, non aliquam purus lobortis.</p>
             </div>
           </div>
         </div>
